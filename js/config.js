@@ -1,7 +1,7 @@
 var config = {
-    lang: 'nl',
+    lang: 'pl',
     time: {
-        timeFormat: 12,
+        timeFormat: 24,
         displaySeconds: true,
         digitFade: false,
     },
@@ -9,30 +9,31 @@ var config = {
         //change weather params here:
         //units: metric or imperial
         params: {
-            q: 'Baarn,Netherlands',
+            q: 'Krakow',
             units: 'metric',
             // if you want a different lang for the weather that what is set above, change it here
-            lang: 'nl',
-            APPID: 'YOUR_FREE_OPENWEATHER_API_KEY'
+            lang: 'pl',
+            APPID: 'f28c59fcbb18192a3621c0b20f9fdccb'
         }
     },
     compliments: {
         interval: 30000,
         fadeInterval: 4000,
         morning: [
-            'Good morning, handsome!',
-            'Enjoy your day!',
-            'How was your sleep?'
+        	'Dzień dobry, przystojniaku!',
+        	'Miłego dnia!',
+        	'Jak się spało?',
+        	'Dzisiaj jest ten dzień!',
         ],
         afternoon: [
-            'Hello, beauty!',
-            'You look sexy!',
-            'Looking good today!'
+        	'Cześć, piękności!',
+        	'Wyglądasz seksownie!',
+        	'Wow, dobrze dzisiaj wyglądasz!'
         ],
         evening: [
-            'Wow, you look hot!',
-            'You look nice!',
-            'Hi, sexy!'
+			'Wyglądasz super!',
+			'Hej, seksi!',
+			'Dobrze wyglądasz!'
         ]
     },
     calendar: {
@@ -63,6 +64,6 @@ var config = {
 		]
     },
     news: {
-        feed: 'http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml'
+        feed: 'http://www.tvn24.pl/krakow,50.xml'
     }
 }
