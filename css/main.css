@@ -61,6 +61,11 @@ html {
   bottom: 50px;
 }
 
+.verybottom {
+  position: absolute;
+  bottom: -25px;
+}
+
 .xxsmall,
 .xsmall,
 .small {
@@ -70,6 +75,10 @@ html {
 
 .xxsmall {
   font-size: 15px;
+}
+
+.xxxsmall {
+  font-size: 10px;
 }
 
 .xxsmall .wi {
@@ -189,6 +198,10 @@ html {
   border-radius: 1000px;
   border-radius: 1200px;
   display: none;
+}
+
+.alignleft {
+  text-align: left;
 }
 
 @font-face {

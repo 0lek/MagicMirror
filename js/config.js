@@ -42,12 +42,12 @@ var config = {
 		defaultSymbol: 'calendar', // Fontawsome Symbol see http://fontawesome.io/cheatsheet/
         urls: [
 		{
-			symbol: 'calendar-plus-o', 
-			url: 'https://p01-calendarws.icloud.com/ca/subscribe/1/n6x7Farxpt7m9S8bHg1TGArSj7J6kanm_2KEoJPL5YIAk3y70FpRo4GyWwO-6QfHSY5mXtHcRGVxYZUf7U3HPDOTG5x0qYnno1Zr_VuKH2M'
+			//symbol: 'calendar-plus-o', 
+			//url: 'https://calendar.google.com/calendar/ical/hello%40aleksanderjarosz.pl/private-259bdebc13875622234e5303cd7f8d1b/basic.ics'
 		},
 		{
-			symbol: 'soccer-ball-o',
-			url: 'https://www.google.com/calendar/ical/akvbisn5iha43idv0ktdalnor4%40group.calendar.google.com/public/basic.ics',
+			//symbol: 'soccer-ball-o',
+			//url: 'https://www.google.com/calendar/ical/akvbisn5iha43idv0ktdalnor4%40group.calendar.google.com/public/basic.ics',
 		},
 		// {
 			// symbol: 'mars',
@@ -64,6 +64,21 @@ var config = {
 		]
     },
     news: {
-        feed: 'http://www.tvn24.pl/krakow,50.xml'
+        //feed: 'http://www.tvn24.pl/krakow,50.xml'
+    },
+    smog: {
+    	smogStation: 'Kraków, Al. Krasińskiego',
+    	// This only applies to PM10 measurements
+    	smogMessageNormExceeded: 'Smog atakuje. Lepiej zostań na kawę!',
+    	smogMessageNormNotExceeded: 'Powietrze w porządku. Bierz kawę na wynos!',
+    	smogMessageNormExceededEN: '(Smog is attacking. Better stay indoors for coffee.)',
+    	smogMessageNormNotExceededEN: '(Air is ok. Take a coffee and enjoy the outside!)',
+    	// Norms from powietrze.gios.gov.pl
+    	normCO: 10000,
+    	normNO2: 200,
+    	normPM10: 50,
+    	normPM25: 25,
+    	// Defines the threshold (in percentage of the norm) after which the norm exceeded msg is shown
+    	PM10Threshold: 100
     }
 }
